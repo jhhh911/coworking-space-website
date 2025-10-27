@@ -1,3 +1,7 @@
+/* * {
+  border: 1px solid red;
+} */
+
 body {
   margin: 0;
   padding: 0;
@@ -45,12 +49,59 @@ h1 {
 
 .item-img {
   width: 100%;
+  display: block;
+}
+
+.item {
+  position: relative;
+  
 }
 
 .caption {
   margin: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
 }
 
 .align-right {
   margin-left: auto;
+}
+
+.img-banner {
+  background-color: #cd6858;
+  color: whitesmoke;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+}
+
+button {
+  border: none;
+  background-color: #cd6858;
+  color: whitesmoke;
+  padding: 10px 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.chatbox-bg {
+  background-color: #dda15e;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px #999;
+  display: flex;
+  position: fixed;
+  bottom: 6px;
+  right: 6px;
+  z-index: 2;
+}
+
+.chatbox {
+  width: 50%;
+  margin: auto;
 }
